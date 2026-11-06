@@ -24,7 +24,8 @@
       enabled: yes
       state: started
 
-  # - name: restart mongodb
-  #   ansible.builtin.service:
-  #     name: mongod
-  #     state: restarted
+- name: Restart MongoDB
+  ansible.builtin.service:
+    name: mongod
+    state: restarted
+    enabled: true
