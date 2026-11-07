@@ -1,9 +1,9 @@
-{
+ {
                 "ansible_loop_var": "item",
                 "changed": true,
                 "failed": false,
                 "instance_ids": [
-                    "i-06f95bdaeb9b1523e"
+                    "i-0d3e0b963bee33c76"
                 ],
                 "instances": [
                     {
@@ -13,11 +13,11 @@
                             {
                                 "device_name": "/dev/sda1",
                                 "ebs": {
-                                    "attach_time": "2026-11-06T14:10:47.813000+00:00",
+                                    "attach_time": "2026-11-07T05:41:46.451000+00:00",
                                     "delete_on_termination": true,
                                     "ebs_card_index": 0,
                                     "status": "attaching",
-                                    "volume_id": "vol-019037de225713c38"
+                                    "volume_id": "vol-02295c6cc8d3c7ba1"
                                 }
                             }
                         ],
@@ -25,7 +25,7 @@
                         "capacity_reservation_specification": {
                             "capacity_reservation_preference": "open"
                         },
-                        "client_token": "8b03665772f74d379a3c11cc49c072ee",
+                        "client_token": "5dc4635f1cc54dc8baaa2702c27149ee",
                         "cpu_options": {
                             "core_count": 1,
                             "threads_per_core": 2
@@ -41,10 +41,10 @@
                         },
                         "hypervisor": "xen",
                         "image_id": "ami-0055977a6e828a4f4",
-                        "instance_id": "i-06f95bdaeb9b1523e",
+                        "instance_id": "i-0d3e0b963bee33c76",
                         "instance_type": "t3.micro",
-                        "key_name": "DAWS-88S",
-                        "launch_time": "2026-11-06T14:10:47+00:00",
+                        "key_name": "daws-88s",
+                        "launch_time": "2026-11-07T05:41:46+00:00",
                         "maintenance_options": {
                             "auto_recovery": "default",
                             "reboot_migration": "default"
@@ -64,12 +64,12 @@
                             {
                                 "association": {
                                     "ip_owner_id": "amazon",
-                                    "public_dns_name": "ec2-32-199-152-171.compute-1.amazonaws.com",
-                                    "public_ip": "32.199.152.171"
+                                    "public_dns_name": "ec2-32-192-235-22.compute-1.amazonaws.com",
+                                    "public_ip": "32.192.235.22"
                                 },
                                 "attachment": {
-                                    "attach_time": "2026-11-06T14:10:47+00:00",
-                                    "attachment_id": "eni-attach-051acf07af90eb076",
+                                    "attach_time": "2026-11-07T05:41:46+00:00",
+                                    "attachment_id": "eni-attach-0e6b0e24e1d480a4d",
                                     "delete_on_termination": true,
                                     "device_index": 0,
                                     "network_card_index": 0,
@@ -84,24 +84,24 @@
                                 ],
                                 "interface_type": "interface",
                                 "ipv6_addresses": [],
-                                "mac_address": "02:ff:dc:c4:02:43",
-                                "network_interface_id": "eni-0f61aed16ae18fb25",
+                                "mac_address": "02:ff:f9:9e:11:15",
+                                "network_interface_id": "eni-01165dd530844c560",
                                 "operator": {
                                     "managed": false
                                 },
                                 "owner_id": "232791540663",
-                                "private_dns_name": "ip-172-31-14-148.ec2.internal",
-                                "private_ip_address": "172.31.14.148",
+                                "private_dns_name": "ip-172-31-10-1.ec2.internal",
+                                "private_ip_address": "172.31.10.1",
                                 "private_ip_addresses": [
                                     {
                                         "association": {
                                             "ip_owner_id": "amazon",
-                                            "public_dns_name": "ec2-32-199-152-171.compute-1.amazonaws.com",
-                                            "public_ip": "32.199.152.171"
+                                            "public_dns_name": "ec2-32-192-235-22.compute-1.amazonaws.com",
+                                            "public_ip": "32.192.235.22"
                                         },
                                         "primary": true,
-                                        "private_dns_name": "ip-172-31-14-148.ec2.internal",
-                                        "private_ip_address": "172.31.14.148"
+                                        "private_dns_name": "ip-172-31-10-1.ec2.internal",
+                                        "private_ip_address": "172.31.10.1"
                                     }
                                 ],
                                 "source_dest_check": true,
@@ -124,16 +124,16 @@
                             "tenancy": "default"
                         },
                         "platform_details": "Red Hat Enterprise Linux",
-                        "private_dns_name": "ip-172-31-14-148.ec2.internal",
+                        "private_dns_name": "ip-172-31-10-1.ec2.internal",
                         "private_dns_name_options": {
                             "enable_resource_name_dns_a_record": false,
                             "enable_resource_name_dns_aaaa_record": false,
                             "hostname_type": "ip-name"
                         },
-                        "private_ip_address": "172.31.14.148",
+                        "private_ip_address": "172.31.10.1",
                         "product_codes": [],
-                        "public_dns_name": "ec2-32-199-152-171.compute-1.amazonaws.com",
-                        "public_ip_address": "32.199.152.171",
+                        "public_dns_name": "ec2-32-192-235-22.compute-1.amazonaws.com",
+                        "public_ip_address": "32.192.235.22",
                         "root_device_name": "/dev/sda1",
                         "root_device_type": "ebs",
                         "secondary_interfaces": [],
@@ -157,7 +157,7 @@
                             "Project": "roboshop"
                         },
                         "usage_operation": "RunInstances:0010",
-                        "usage_operation_update_time": "2026-11-06T14:10:47+00:00",
+                        "usage_operation_update_time": "2026-11-07T05:41:46+00:00",
                         "virtualization_type": "hvm",
                         "vpc_id": "vpc-043f24eb9bd25889b"
                     }
@@ -199,7 +199,7 @@
                         "instance_ids": [],
                         "instance_initiated_shutdown_behavior": null,
                         "instance_type": "t3.micro",
-                        "key_name": "DAWS-88S",
+                        "key_name": "daws-88s",
                         "launch_template": null,
                         "metadata_options": null,
                         "name": "mongodb-dev",
@@ -232,10 +232,10 @@
                 "item": "mongodb",
                 "spec": {
                     "BlockDeviceMappings": [],
-                    "ClientToken": "8b03665772f74d379a3c11cc49c072ee",
+                    "ClientToken": "5dc4635f1cc54dc8baaa2702c27149ee",
                     "ImageId": "ami-0055977a6e828a4f4",
                     "InstanceType": "t3.micro",
-                    "KeyName": "DAWS-88S",
+                    "KeyName": "daws-88s",
                     "MaxCount": 1,
                     "MinCount": 1,
                     "NetworkInterfaces": [
@@ -298,7 +298,7 @@
                 "changed": true,
                 "failed": false,
                 "instance_ids": [
-                    "i-09cca669c35bb63a1"
+                    "i-011347d026d1dd541"
                 ],
                 "instances": [
                     {
@@ -308,11 +308,11 @@
                             {
                                 "device_name": "/dev/sda1",
                                 "ebs": {
-                                    "attach_time": "2026-11-06T14:10:52.362000+00:00",
+                                    "attach_time": "2026-11-07T05:41:51+00:00",
                                     "delete_on_termination": true,
                                     "ebs_card_index": 0,
-                                    "status": "attached",
-                                    "volume_id": "vol-03f132716baf7e071"
+                                    "status": "attaching",
+                                    "volume_id": "vol-04fa2499f168cff7e"
                                 }
                             }
                         ],
@@ -320,7 +320,7 @@
                         "capacity_reservation_specification": {
                             "capacity_reservation_preference": "open"
                         },
-                        "client_token": "948323194acc4da7bd2bb9386c4febe7",
+                        "client_token": "2b85b39d5158492bac9e8218ea2da50a",
                         "cpu_options": {
                             "core_count": 1,
                             "threads_per_core": 2
@@ -336,10 +336,10 @@
                         },
                         "hypervisor": "xen",
                         "image_id": "ami-0055977a6e828a4f4",
-                        "instance_id": "i-09cca669c35bb63a1",
+                        "instance_id": "i-011347d026d1dd541",
                         "instance_type": "t3.micro",
-                        "key_name": "DAWS-88S",
-                        "launch_time": "2026-11-06T14:10:52+00:00",
+                        "key_name": "daws-88s",
+                        "launch_time": "2026-11-07T05:41:50+00:00",
                         "maintenance_options": {
                             "auto_recovery": "default",
                             "reboot_migration": "default"
@@ -350,7 +350,7 @@
                             "http_put_response_hop_limit": 1,
                             "http_tokens": "optional",
                             "instance_metadata_tags": "disabled",
-                            "state": "applied"
+                            "state": "pending"
                         },
                         "monitoring": {
                             "state": "disabled"
@@ -359,16 +359,16 @@
                             {
                                 "association": {
                                     "ip_owner_id": "amazon",
-                                    "public_dns_name": "ec2-100-61-37-233.compute-1.amazonaws.com",
-                                    "public_ip": "100.61.37.233"
+                                    "public_dns_name": "ec2-32-195-71-226.compute-1.amazonaws.com",
+                                    "public_ip": "32.195.71.226"
                                 },
                                 "attachment": {
-                                    "attach_time": "2026-11-06T14:10:52+00:00",
-                                    "attachment_id": "eni-attach-06f0043529c8a41ff",
+                                    "attach_time": "2026-11-07T05:41:50+00:00",
+                                    "attachment_id": "eni-attach-0e34046bcd4406a80",
                                     "delete_on_termination": true,
                                     "device_index": 0,
                                     "network_card_index": 0,
-                                    "status": "attached"
+                                    "status": "attaching"
                                 },
                                 "description": "",
                                 "groups": [
@@ -379,24 +379,24 @@
                                 ],
                                 "interface_type": "interface",
                                 "ipv6_addresses": [],
-                                "mac_address": "02:ff:f0:8d:de:03",
-                                "network_interface_id": "eni-0456357435cb026bb",
+                                "mac_address": "02:ff:cc:f1:fb:35",
+                                "network_interface_id": "eni-0df82db32541d32b3",
                                 "operator": {
                                     "managed": false
                                 },
                                 "owner_id": "232791540663",
-                                "private_dns_name": "ip-172-31-13-159.ec2.internal",
-                                "private_ip_address": "172.31.13.159",
+                                "private_dns_name": "ip-172-31-12-215.ec2.internal",
+                                "private_ip_address": "172.31.12.215",
                                 "private_ip_addresses": [
                                     {
                                         "association": {
                                             "ip_owner_id": "amazon",
-                                            "public_dns_name": "ec2-100-61-37-233.compute-1.amazonaws.com",
-                                            "public_ip": "100.61.37.233"
+                                            "public_dns_name": "ec2-32-195-71-226.compute-1.amazonaws.com",
+                                            "public_ip": "32.195.71.226"
                                         },
                                         "primary": true,
-                                        "private_dns_name": "ip-172-31-13-159.ec2.internal",
-                                        "private_ip_address": "172.31.13.159"
+                                        "private_dns_name": "ip-172-31-12-215.ec2.internal",
+                                        "private_ip_address": "172.31.12.215"
                                     }
                                 ],
                                 "source_dest_check": true,
@@ -419,16 +419,16 @@
                             "tenancy": "default"
                         },
                         "platform_details": "Red Hat Enterprise Linux",
-                        "private_dns_name": "ip-172-31-13-159.ec2.internal",
+                        "private_dns_name": "ip-172-31-12-215.ec2.internal",
                         "private_dns_name_options": {
                             "enable_resource_name_dns_a_record": false,
                             "enable_resource_name_dns_aaaa_record": false,
                             "hostname_type": "ip-name"
                         },
-                        "private_ip_address": "172.31.13.159",
+                        "private_ip_address": "172.31.12.215",
                         "product_codes": [],
-                        "public_dns_name": "ec2-100-61-37-233.compute-1.amazonaws.com",
-                        "public_ip_address": "100.61.37.233",
+                        "public_dns_name": "ec2-32-195-71-226.compute-1.amazonaws.com",
+                        "public_ip_address": "32.195.71.226",
                         "root_device_name": "/dev/sda1",
                         "root_device_type": "ebs",
                         "secondary_interfaces": [],
@@ -440,8 +440,8 @@
                         ],
                         "source_dest_check": true,
                         "state": {
-                            "code": 16,
-                            "name": "running"
+                            "code": 0,
+                            "name": "pending"
                         },
                         "state_transition_reason": "",
                         "subnet_id": "subnet-08a789d58bc3a43a4",
@@ -452,7 +452,7 @@
                             "Project": "roboshop"
                         },
                         "usage_operation": "RunInstances:0010",
-                        "usage_operation_update_time": "2026-11-06T14:10:52+00:00",
+                        "usage_operation_update_time": "2026-11-07T05:41:50+00:00",
                         "virtualization_type": "hvm",
                         "vpc_id": "vpc-043f24eb9bd25889b"
                     }
@@ -494,7 +494,7 @@
                         "instance_ids": [],
                         "instance_initiated_shutdown_behavior": null,
                         "instance_type": "t3.micro",
-                        "key_name": "DAWS-88S",
+                        "key_name": "daws-88s",
                         "launch_template": null,
                         "metadata_options": null,
                         "name": "catalogue-dev",
@@ -527,10 +527,10 @@
                 "item": "catalogue",
                 "spec": {
                     "BlockDeviceMappings": [],
-                    "ClientToken": "948323194acc4da7bd2bb9386c4febe7",
+                    "ClientToken": "2b85b39d5158492bac9e8218ea2da50a",
                     "ImageId": "ami-0055977a6e828a4f4",
                     "InstanceType": "t3.micro",
-                    "KeyName": "DAWS-88S",
+                    "KeyName": "daws-88s",
                     "MaxCount": 1,
                     "MinCount": 1,
                     "NetworkInterfaces": [
