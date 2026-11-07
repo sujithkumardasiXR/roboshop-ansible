@@ -5,7 +5,7 @@
   vars:
     sg_id: sg-0863830c1c1ca306a
     ami_id: ami-0055977a6e828a4f4
-    key_name: DAWS-88S
+    key_name: daws-88s
     domain_name: shinoys.online
     env: dev
     action: create
@@ -21,7 +21,7 @@
       security_group: "{{ sg_id }}"
       image_id: "{{ ami_id }}"
       name: "{{ item }}-{{ env }}"
-      key_name: DAWS-88S
+      key_name: daws-88s
       tags:
         Project: roboshop
         Component: "{{ item }}"
