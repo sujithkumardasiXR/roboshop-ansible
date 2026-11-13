@@ -1,56 +1,50 @@
 - name: configure frontend server
   hosts: frontend
   become: yes
-  tasks: 
-  - name: enable nginx 1.26
-    command: dnf module enable nginx:1.26 -y
+  tasks:
+  - name: enable nginx 1.24
+    ansible.builtin.command: dnf module enable nginx:1.24 -y
 
   - name: install nginx
-    dnf:
+    ansible.builtin.dnf:
       name: nginx
       state: present
 
-  - name: start and enable nginx
-    service:
-      name: nginx
-      state: started
-      enabled: yes
-
-  - name: Find all contents inside the directory
-    ansible.builtin.find:
-      paths: /usr/share/nginx/html/
-      recurse: true
-      hidden: true
-      file_type: any
-    register: directory_contents
-
-  - name: print directory content
-    debug:
-      msg: "{{ directory_contents }}"
-
-  - name: Delete the discovered contents
+  - name: Remove the entire directory
     ansible.builtin.file:
-      path: "{{ item.path }}"
+      path: /usr/share/nginx/html
       state: absent
-    loop: "{{ directory_contents.files }}"
 
-  - name: download frontend application
-    get_url:
-      url: https://raw.githubusercontent.com/daws-92s/roboshop-documentation/refs/heads/main/artifacts/frontend-v4.zip
+  - name: create html directory
+    ansible.builtin.file:
+      path: /usr/share/nginx/html
+      state: directory
+
+  - name: download frontend
+    ansible.builtin.get_url:
+      url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip 
       dest: /tmp/frontend.zip
 
-  - name: unzip frontend
-    unarchive:
+  - name: unarchieve frontend
+    ansible.builtin.unarchive:
       src: /tmp/frontend.zip
-      dest: /usr/share/nginx/html/
+      dest: /usr/share/nginx/html
       remote_src: yes
 
-  - name: copy roboshop config
-    template:
-      src: roboshop.conf.j2
-      dest: /etc/nginx/default.d/roboshop.conf
-   
-  - name: restart frontend
-    service:
+  - name: remove default nginx
+    ansible.builtin.file:
+      state: absent
+      path: /etc/nginx/nginx.conf
+
+  - name: copy nginx.conf
+    ansible.builtin.template:
+      src: nginx.conf
+      dest: /etc/nginx/nginx.conf
+
+  - name: resatrt nginx
+    ansible.builtin.service:
       name: nginx
       state: restarted
+      enabled: yes
+
+  
